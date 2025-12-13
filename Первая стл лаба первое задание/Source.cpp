@@ -57,7 +57,8 @@ int main() {
         printMatrix(matrix);
 
         std::cout << "\nСуммы строк:" << std::endl;
-        for (size_t i = 0; i < matrix.size(); i++) {
+        size_t size = matrix.size();
+        for (size_t i = 0; i < size; i++) {
             std::cout << "Строка " << i << ": сумма = "
                 << calculateRowSum(matrix[i]) << std::endl;
         }
